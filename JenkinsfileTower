@@ -5,8 +5,8 @@ final FULL_BUILD = params.FULL_BUILD
 // HOST_PROVISION -> server to run ansible based on provision/inventory.ini
 final HOST_PROVISION = params.HOST_PROVISION
 
-final GIT_URL = 'https://github.com/msadiqh/shopizer.git'
-final NEXUS_URL = 'nexus.esafe.com:8081'
+final GIT_URL = 'https://github.com/gkswamy1984/DevOps-Demo.git'
+final NEXUS_URL = 'nexus.pccwinsys.com:8081'
 final NEXUS_REPO = 'maven-releases'
 
 stage('Build') {
