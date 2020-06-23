@@ -11,7 +11,10 @@ final NEXUS_REPO = 'maven-releases'
 
 stage('Build') {
     node {
-        git GIT_URL
+        git branch: 'master',
+            credentialsId: 'Git',
+            url: GIT_URL
+            
         withEnv(["PATH+MAVEN=${tool 'm3'}/bin"]) {
             if(FULL_BUILD) {
                 def pom = readMavenPom file: 'pom.xml'
